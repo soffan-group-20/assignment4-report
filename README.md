@@ -14,9 +14,7 @@ TEAMMATES is a free online tool for managing peer evaluations and other feedback
 
 ## Onboarding experience
 
-Did you choose a new project or continue on the previous one?
-
-If you changed the project, how did your experience differ from before?
+We decided to continue on the same project hence the onboarding experience remains the same as the last time. Our onboarding [Onboarding expeirence TEAMMATES](https://github.com/soffan-group-20/teammates/issues/1)
 
 ## Effort spent
 

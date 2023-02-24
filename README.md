@@ -6,11 +6,11 @@ has to be delivered in a standard, cross-platform format.
 
 ## Project
 
-Name:
+Name: Teammates
 
-URL:
+URL: https://github.com/TEAMMATES/teammates
 
-One or two sentences describing it
+TEAMMATES is a free online tool for managing peer evaluations and other feedback paths of your students. It is provided as a cloud-based service for educators/students and is currently used by hundreds of universities across the world.
 
 ## Onboarding experience
 

@@ -51,6 +51,8 @@ Summary in one or two sentences
 Scope (functionality and code affected).
 
 ## Requirements for the new feature or requirements affected by functionality being refactored
+* There is a "copy" option on the instructor home page, it should have the same behavior as currently implemented on "courses" page.
+* Button should have related tests
 
 Optional (point 3): trace tests to requirements.
 

@@ -20,14 +20,14 @@ We decided to continue on the same project hence the onboarding experience remai
 
 | Time spent                            | Didrik | Erik   | Hampus | Adam   |
 | ------------------------------------- | ------ | ------ | ------ | ------ |
-| discussions/meetings                  | 5      | 5      | 0      | 0      |
-| discussions within parts of the group | 4      | 2      | 0      | 0      |
-| reading documentation                 | 1      | 1      | 0      | 0      |
-| configuration and setup               | 1      | 2      | 0      | 0      |
-| analyzing code/output                 | 2      | 4      | 0      | 0      |
-| writing documentation                 | 2      | 2      | 0      | 0      |
-| writing code                          | 7      | 2      | 0      | 0      |
-| running code                          | 5      | 4      | 0      | 0      |
+| discussions/meetings                  | 5      | 5      | 5      | 0      |
+| discussions within parts of the group | 4      | 2      | 2      | 0      |
+| reading documentation                 | 1      | 1      | 1      | 0      |
+| configuration and setup               | 1      | 2      | 2      | 0      |
+| analyzing code/output                 | 2      | 4      | 2      | 0      |
+| writing documentation                 | 2      | 2      | 1      | 0      |
+| writing code                          | 7      | 2      | 3      | 0      |
+| running code                          | 5      | 4      | 3      | 0      |
 
 ## Overview of issue(s) and work done.
 
@@ -124,7 +124,7 @@ Didrik: I have practiced using jest to test front end Angular code. I've honed m
 
 Erik: I have increased my knowledge of Git and Github, worked with front-end for the first time (Angular, TypeScript) and improved in testing code. I also feel I have gotten a better understanding of how projects and working together with a team in software development work.
 
-Hampus:
+Hampus: During this project I feel like I've practiced analyzing and rewriting code that might not be the most structured and understanding machinery in an entire system.
 
 Adam:
 

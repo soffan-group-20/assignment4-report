@@ -20,20 +20,20 @@ We decided to continue on the same project hence the onboarding experience remai
 
 | Time spent                            | Didrik | Erik   | Hampus | Adam   |
 | ------------------------------------- | ------ | ------ | ------ | ------ |
-| discussions/meetings                  | 5      | 0      | 0      | 0      |
-| discussions within parts of the group | 4      | 0      | 0      | 0      |
-| reading documentation                 | 1      | 0      | 0      | 0      |
-| configuration and setup               | 1      | 0      | 0      | 0      |
-| analyzing code/output                 | 2      | 0      | 0      | 0      |
-| writing documentation                 | 2      | 0      | 0      | 0      |
-| writing code                          | 7      | 0      | 0      | 0      |
-| running code                          | 5      | 0      | 0      | 0      |
+| discussions/meetings                  | 5      | 5      | 0      | 0      |
+| discussions within parts of the group | 4      | 2      | 0      | 0      |
+| reading documentation                 | 1      | 1      | 0      | 0      |
+| configuration and setup               | 1      | 2      | 0      | 0      |
+| analyzing code/output                 | 2      | 2      | 0      | 0      |
+| writing documentation                 | 2      | 2      | 0      | 0      |
+| writing code                          | 7      | 4      | 0      | 0      |
+| running code                          | 5      | 4      | 0      | 0      |
 
 ## Overview of issue(s) and work done.
 
-For requirement 5: Code changes are displayed in the following GitHub PRs.
+For P requirement 5: Code changes are displayed in the following GitHub PRs.
 
-For requirement 6: Their CI server automatically run tests when a commit is pushed to the repo.
+For P requirement 6: Their CI server automatically run tests when a commit is pushed to the repo.
 
 ##### PR 1: Add 'course -> copy' option to the instructor home page
 
@@ -61,7 +61,7 @@ Requirement 1 is simply a presentational requirement, which writing a test for w
 
 This test is made to make sure requirement 2 works: https://github.com/TEAMMATES/teammates/blob/a75f084d37361f835fb600c730df5d1a5a2f722e/src/web/app/components/course-copy/course-copy.component.spec.ts
 
-Architecture:
+### UML class diagram and architecture
 
 In Angular 2 there are things called components, having responsibility for presentation, and service, having responsibility for business logic. The course copy logic was now extracted (refactoring pattern) to the `course` service, allowing the logic to be used from any component. The instructor home page and the courses page have a lot in common, which is why this service pattern is good for these kinds of projects. Angular uses a pattern called dependency injection, to allow for components and other services to dynamically tell the execution environment what services they are dependent on. Angular will then, during runtime, inject these services into components and services. Services are by default global, but components can demand that they be given a new scope of a service, which will create a new root service for themselves and all their child components, or services which their child component uses.
 
@@ -93,7 +93,7 @@ Requirements:
 
 1 *Gap between checkbox and text*
 
-> There should be a space between a checkbox and a text, this will not impact functionality but is a visual improvement and affects the file `rubric-question-statistics.component.html`.
+> There should be a space between a checkbox and a text
 
 2 *No dots in gap*
 
@@ -101,7 +101,7 @@ Requirements:
 
 Summary & scope:
 
-A class `form-check` was added to the parent container, which automatically created the gap.
+A class `form-check` was added to the parent container, which automatically created the gap. This will not impact functionality but is a visual improvement and affects the file `rubric-question-statistics.component.html`.
 
 1 file changed, 1 LOC.
 
@@ -111,31 +111,25 @@ A class `form-check` was added to the parent container, which automatically crea
 
 ## Code changes
 
-### Patch
+Check the linked pull requests.
 
 ## Test results
 
-Overall results with link to a copy or excerpt of the logs (before/after
-refactoring).
-
-## UML class diagram and its description
-
-### Key changes/classes affected
-
-Optional (point 1): Architectural overview.
-
-Optional (point 2): relation to design pattern(s).
+Check the linked pull requests.
 
 ## Overall experience
 
 #### What are your main take-aways from this project? What did you learn?
+Didrik: I have practiced using jest to test front end Angular code. I've honed my skills of refactoring large code bases.
+
+Erik: I have increased my knowledge of Git and Github, worked with front-end for the first time (Angular, TypeScript) and improved in testing code. I also feel I have gotten a better understanding of how projects and working together with a team in software development work.
+
+Hampus:
+
+Adam:
 
 #### How did you grow as a team, using the Essence standard to evaluate yourself?
 
 Going through the Essence team checklist we established that we are currently in the Performing state. We have been able to successfully implement a way of working and have trust in each other as a team to take responsibility and do the work needed in a cohesive manner. We are at a stage where we are now performing tasks and identifying, addressing, and eliminating potential problems within the team and as we are now close to finishing the course and the assignments, we place ourselves in the Performing state. What hinders from reaching the last state Adjourned is being fully complete with the assignment. When this last assignment has been submitted and graded we can fulfil the requirements for the last state and see ourselves as done.
 
 As the group has gotten to know each other better I think we have improved, both individually and as a team. For example, we have realized our strengths and weaknesses, allowing us to work more efficient and find tools and techniques which benefits our working process. We have also been able to improve communication and collaboration within the team. Despite making great progress in throughout the course there is always more ways to improve. We are certain we could, if we were to continue working together for a longer period of time, optimize our way of working further and ultimately develop a more efficient process within the team. One of the things we believe can be improved even more is assessing ourselves and our work. For example, by making it a habit in our way of working to continuously pause and assess ourselves and our tools and techniques. In the same way we believe communication within the team could be improved further by making it a habit to have team regular team meetings and keeping each other up to date to everyone’s status.
-
-#### Optional (point 6): How would you put your work in context with best software engineering practice?
-
-#### Optional (point 7): Is there something special you want to mention here?

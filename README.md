@@ -42,38 +42,73 @@ you took care of and where you spent your time, if that time exceeds
 
 ## Overview of issue(s) and work done.
 
-#### Title: Add 'course -> copy' option to the instructor home page
+For requirement 5: Code changes are displayed in the following GitHub PRs.
 
-URL:
+For requirement 6: Their CI server automatically run tests when a commit is pushed to the repo.
+
+##### PR 1: Add 'course -> copy' option to the instructor home page
+
+URL: https://github.com/TEAMMATES/teammates/pull/12177
+
+Requirements:
+
+1 *Copy button presentation*
+
+> There should be a button "Copy" for each course on the home page. These should be visible when clicking on a course chevron button.
+
+2 *Copy button logic*
+
+> These buttons should copy the course. They should send the same kind of data as in other pages.
 
 Summary & scope:
-Summary in one or two sentences
 
-Scope (functionality and code affected).
+The copy course functionality was heavily tangled with presentational logic for the courses page. This functionality had to be moved out to their own service, in order to be used from multiple components.
 
-#### Title: Instructor viewing results of rubric questions: missing space after checkbox
+35 files changed, with ~1500 LOC changes (most LOC changes are from test snapshots).
 
-URL:
+Architecture:
 
-Summary & scope: There should be a space between a checkbox and a text, this will not impact functionallity but is a visual improvement and affects the file `rubric-question-statistics.component.html`.
+Before:
 
-## Requirements for the new feature or requirements affected by functionality being refactored
-* There is a "copy" option on the instructor home page, it should have the same behavior as currently implemented on "courses" page.
-* Button should have related tests
+![Blank_UML](https://user-images.githubusercontent.com/5240046/223676185-93346e94-ae8a-4fab-b1f6-ce9f09a219e9.png)
 
-Optional (point 3): trace tests to requirements.
+After:
+
+![Blank_UML-2](https://user-images.githubusercontent.com/5240046/223676206-9ee5a639-8cc9-4516-be2c-988786117619.png)
+
+
+- Optional (point 1): architecture is discussed.
+- Optional (point 3): tests are traced to requirements: This test is made to make sure requirement 2 works: https://github.com/TEAMMATES/teammates/blob/a75f084d37361f835fb600c730df5d1a5a2f722e/src/web/app/components/course-copy/course-copy.component.spec.ts
+- Optional (point 4): the patch is clean.
+- Optional (point 5): considered for acceptance (passes all automated checks), at least the front end checks. Their E2E tests seem to fail for all PRs, but since these have nothing to do with our implementation we consider this PR to pass all automated checks.
+
+##### PR 2: Instructor viewing results of rubric questions: missing space after checkbox
+
+URL: https://github.com/TEAMMATES/teammates/pull/12151
+
+Requirements:
+
+1 *Gap between checkbox and text*
+
+> There should be a space between a checkbox and a text, this will not impact functionality but is a visual improvement and affects the file `rubric-question-statistics.component.html`.
+
+2 *No dots in gap*
+
+> There should be no dots in the gap.
+
+Summary & scope:
+
+A class `form-check` was added to the parent container, which automatically created the gap.
+
+1 file changed, 1 LOC.
+
+- Optional (point 3): not tests are required.
+- Optional (point 4): the patch is clean.
+- Optional (point 5): considered for acceptance (passes all automated checks).
 
 ## Code changes
 
 ### Patch
-
-(copy your changes or the add git command to show them)
-
-git diff ...
-
-Optional (point 4): the patch is clean.
-
-Optional (point 5): considered for acceptance (passes all automated checks).
 
 ## Test results
 

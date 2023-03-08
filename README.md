@@ -20,14 +20,14 @@ We decided to continue on the same project hence the onboarding experience remai
 
 | Time spent                            | Didrik | Erik   | Hampus | Adam   |
 | ------------------------------------- | ------ | ------ | ------ | ------ |
-| discussions/meetings                  | 5      | 5      | 5      | 0      |
-| discussions within parts of the group | 4      | 2      | 2      | 0      |
-| reading documentation                 | 1      | 1      | 1      | 0      |
-| configuration and setup               | 1      | 2      | 2      | 0      |
-| analyzing code/output                 | 2      | 4      | 2      | 0      |
-| writing documentation                 | 2      | 2      | 1      | 0      |
-| writing code                          | 7      | 2      | 3      | 0      |
-| running code                          | 5      | 4      | 3      | 0      |
+| discussions/meetings                  | 5      | 5      | 5      | 5      |
+| discussions within parts of the group | 4      | 2      | 2      | 1      |
+| reading documentation                 | 1      | 1      | 1      | 1      |
+| configuration and setup               | 1      | 2      | 2      | 2      |
+| analyzing code/output                 | 2      | 4      | 2      | 2      |
+| writing documentation                 | 2      | 2      | 1      | 1      |
+| writing code                          | 7      | 2      | 3      | 5      |
+| running code                          | 5      | 4      | 3      | 2      |
 
 ## Overview of issue(s) and work done.
 
@@ -105,9 +105,31 @@ A class `form-check` was added to the parent container, which automatically crea
 
 1 file changed, 1 LOC.
 
-- Optional (point 3): not tests are required.
+- Optional (point 3): no tests are required.
 - Optional (point 4): the patch is clean.
 - Optional (point 5): considered for acceptance (passes all automated checks).
+
+##### PR 3: Instructor home page: redundant padding
+
+URL: https://github.com/TEAMMATES/teammates/pull/12181
+
+Requirements:
+
+1 *No extra padding
+
+> There should be no extra padding between the inner border and the outer border.
+
+Summary & scope:
+
+The class `col-12` was removed from an element in `sessions-table.component.html` which
+fixed the padding issue. The majority of the time was spent trying to understand the
+bootstrap tool used by the project and navigating around different files trying
+to find the relevant element to modify.
+
+1 file changed, 1 LOC.
+
+- Optional (point 3): no tests are required.
+- Optional (point 4): the patch is clean.
 
 ## Code changes
 

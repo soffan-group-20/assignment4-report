@@ -128,7 +128,7 @@ to find the relevant element to modify.
 
 1 file changed, 1 LOC.
 
-- Optional (point 3): no tests are required.
+- Optional (point 3): no tests are required, but some pre-existing component tests had to be modified.
 - Optional (point 4): the patch is clean.
 
 ## Code changes

@@ -148,7 +148,7 @@ Erik: I have increased my knowledge of Git and Github, worked with front-end for
 
 Hampus: During this project I feel like I've practiced analyzing and rewriting code that might not be the most structured and understanding machinery in an entire system.
 
-Adam:
+Adam: I have now had a taste of modern web development. I learned about some Javascript toolkits/libraries/frameworks but I hope to never have to touch them again. A more valuable thing I've learned is how to work with Git and Github on a more advanced level.
 
 #### How did you grow as a team, using the Essence standard to evaluate yourself?
 

@@ -68,6 +68,12 @@ The copy course functionality was heavily tangled with presentational logic for 
 
 Architecture:
 
+In Angular 2 there are things called components, having responsibility for presentation, and service, having responsibility for business logic. The course copy logic was now extracted (refactoring pattern) to the `course` service, allowing the logic to be used from any component. The instructor home page and the courses page have a lot in common, which is why this service pattern is good for these kinds of projects. Angular uses a pattern called dependency injection, to allow for components and other services to dynamically tell the execution environment what services they are dependent on. Angular will then, during runtime, inject these services into components and services. Services are by default global, but components can demand that they be given a new scope of a service, which will create a new root service for themselves and all their child components, or services which their child component uses.
+
+Angular is a standard MVC (model, view, controller) framework, meaning separation of these concerns are emphasized. This is implemented by having the view in HTML files, and controllers in Javascript/Typescript files. Models can be supplied either through an API on the web, or be in data structures on the client.
+
+Another commonly used pattern in this project is the Observer pattern, used by the `rxjs` library. The `rxjs` library usually exposes observables on a service level, allowing components to listen to global data changes. `rxjs` also allows for filtering, mapping, and other operators on an observable stream.
+
 Before:
 
 ![Blank_UML](https://user-images.githubusercontent.com/5240046/223676185-93346e94-ae8a-4fab-b1f6-ce9f09a219e9.png)
@@ -76,15 +82,17 @@ After:
 
 ![Blank_UML-2](https://user-images.githubusercontent.com/5240046/223676206-9ee5a639-8cc9-4516-be2c-988786117619.png)
 
+P+ items:
 
 - Optional (point 1): architecture is discussed.
+- Optional (point 2): software architecture is discussed.
 - Optional (point 3): tests are traced to requirements: This test is made to make sure requirement 2 works: https://github.com/TEAMMATES/teammates/blob/a75f084d37361f835fb600c730df5d1a5a2f722e/src/web/app/components/course-copy/course-copy.component.spec.ts
 - Optional (point 4): the patch is clean.
 - Optional (point 5): considered for acceptance (passes all automated checks), at least the front end checks. Their E2E tests seem to fail for all PRs, but since these have nothing to do with our implementation we consider this PR to pass all automated checks.
 
 ##### PR 2: Instructor viewing results of rubric questions: missing space after checkbox
 
-URL: https://github.com/TEAMMATES/teammates/pull/12151
+URL: https://github.com/TEAMMATES/teammates/pull/12151 (Merged)
 
 Requirements:
 

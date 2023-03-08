@@ -20,14 +20,14 @@ We decided to continue on the same project hence the onboarding experience remai
 
 | Time spent                            | Didrik | Erik   | Hampus | Adam   |
 | ------------------------------------- | ------ | ------ | ------ | ------ |
-| plenary discussions/meetings          | 0      | 0      | 0      | 0      |
-| discussions within parts of the group | 0      | 0      | 0      | 0      |
-| reading documentation                 | 0      | 0      | 0      | 0      |
-| configuration and setup               | 0      | 0      | 0      | 0      |
-| analyzing code/output                 | 0      | 0      | 0      | 0      |
-| writing documentation                 | 0      | 0      | 0      | 0      |
-| writing code                          | 0      | 0      | 0      | 0      |
-| running code                          | 0      | 0      | 0      | 0      |
+| discussions/meetings                  | 5      | 0      | 0      | 0      |
+| discussions within parts of the group | 4      | 0      | 0      | 0      |
+| reading documentation                 | 1      | 0      | 0      | 0      |
+| configuration and setup               | 1      | 0      | 0      | 0      |
+| analyzing code/output                 | 2      | 0      | 0      | 0      |
+| writing documentation                 | 2      | 0      | 0      | 0      |
+| writing code                          | 7      | 0      | 0      | 0      |
+| running code                          | 5      | 0      | 0      | 0      |
 
 ## Overview of issue(s) and work done.
 
@@ -55,6 +55,12 @@ The copy course functionality was heavily tangled with presentational logic for 
 
 35 files changed, with ~1500 LOC changes (most LOC changes are from test snapshots).
 
+Tests:
+
+Requirement 1 is simply a presentational requirement, which writing a test for would clutter the code base, since we would essentially be testing whether or not the Angular framework can render HTML elements.
+
+This test is made to make sure requirement 2 works: https://github.com/TEAMMATES/teammates/blob/a75f084d37361f835fb600c730df5d1a5a2f722e/src/web/app/components/course-copy/course-copy.component.spec.ts
+
 Architecture:
 
 In Angular 2 there are things called components, having responsibility for presentation, and service, having responsibility for business logic. The course copy logic was now extracted (refactoring pattern) to the `course` service, allowing the logic to be used from any component. The instructor home page and the courses page have a lot in common, which is why this service pattern is good for these kinds of projects. Angular uses a pattern called dependency injection, to allow for components and other services to dynamically tell the execution environment what services they are dependent on. Angular will then, during runtime, inject these services into components and services. Services are by default global, but components can demand that they be given a new scope of a service, which will create a new root service for themselves and all their child components, or services which their child component uses.
@@ -75,7 +81,7 @@ P+ items:
 
 - Optional (point 1): architecture is discussed.
 - Optional (point 2): software architecture is discussed.
-- Optional (point 3): tests are traced to requirements: This test is made to make sure requirement 2 works: https://github.com/TEAMMATES/teammates/blob/a75f084d37361f835fb600c730df5d1a5a2f722e/src/web/app/components/course-copy/course-copy.component.spec.ts
+- Optional (point 3): tests are traced to requirements.
 - Optional (point 4): the patch is clean.
 - Optional (point 5): considered for acceptance (passes all automated checks), at least the front end checks. Their E2E tests seem to fail for all PRs, but since these have nothing to do with our implementation we consider this PR to pass all automated checks.
 

@@ -18,27 +18,16 @@ We decided to continue on the same project hence the onboarding experience remai
 
 ## Effort spent
 
-For each team member, how much time was spent in
-
-1. plenary discussions/meetings;
-
-2. discussions within parts of the group;
-
-3. reading documentation;
-
-4. configuration and setup;
-
-5. analyzing code/output;
-
-6. writing documentation;
-
-7. writing code;
-
-8. running code?
-
-For setting up tools and libraries (step 4), enumerate all dependencies
-you took care of and where you spent your time, if that time exceeds
-30 minutes.
+| Time spent                            | Didrik | Erik   | Hampus | Adam   |
+| ------------------------------------- | ------ | ------ | ------ | ------ |
+| plenary discussions/meetings          | 0      | 0      | 0      | 0      |
+| discussions within parts of the group | 0      | 0      | 0      | 0      |
+| reading documentation                 | 0      | 0      | 0      | 0      |
+| configuration and setup               | 0      | 0      | 0      | 0      |
+| analyzing code/output                 | 0      | 0      | 0      | 0      |
+| writing documentation                 | 0      | 0      | 0      | 0      |
+| writing code                          | 0      | 0      | 0      | 0      |
+| running code                          | 0      | 0      | 0      | 0      |
 
 ## Overview of issue(s) and work done.
 

@@ -115,7 +115,7 @@ URL: https://github.com/TEAMMATES/teammates/pull/12181
 
 Requirements:
 
-1 *No extra padding
+1 *No extra padding*
 
 > There should be no extra padding between the inner border and the outer border.
 

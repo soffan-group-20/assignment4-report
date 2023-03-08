@@ -24,9 +24,9 @@ We decided to continue on the same project hence the onboarding experience remai
 | discussions within parts of the group | 4      | 2      | 0      | 0      |
 | reading documentation                 | 1      | 1      | 0      | 0      |
 | configuration and setup               | 1      | 2      | 0      | 0      |
-| analyzing code/output                 | 2      | 2      | 0      | 0      |
+| analyzing code/output                 | 2      | 4      | 0      | 0      |
 | writing documentation                 | 2      | 2      | 0      | 0      |
-| writing code                          | 7      | 4      | 0      | 0      |
+| writing code                          | 7      | 2      | 0      | 0      |
 | running code                          | 5      | 4      | 0      | 0      |
 
 ## Overview of issue(s) and work done.
